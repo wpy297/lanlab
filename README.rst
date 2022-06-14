@@ -21,7 +21,15 @@ Material and Methods
 -----------------------------------  
 **2.1 工具**  
 
+1. Repository Pattern：
+
+在域和数据映射层之间添加仓储层，以将域对象与数据库访问代码的细节隔离开来，并最小化查询代码的分散和重复。
+
 **2.2 方法**
+
+存储库模式：
+
+https://www.cosmicpython.com/book/chapter_02_repository.html
 
 Result  
 -----------------------------------------  
@@ -92,7 +100,11 @@ Result
 
 **3.2 运行结果**
 
+.. image:: media/测试结果.png
 
+**3.3 视频结果**
+
+【测试过程.mp4】  https://cloud.zjnu.edu.cn/share/5eaf2b5a0d73b72ca063fd3583
 
 Discussion
 -----------------------------------
