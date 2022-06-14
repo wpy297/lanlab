@@ -2,6 +2,15 @@ Lab3:
 =======================================  
 Introduction  
 --------------------------------------  
+
+成员信息：
+
+[刘奕秀]-201931990209-1978933929@qq.com(TECHLEAD)
+
+[李敏]-201931990403-2609891867@qq.com
+
+[吴佩媛]-201931990410-29723741292@qq.com
+
 - 了解存储库的模式。  
 
 - 了解服务层模式。  
@@ -82,7 +91,8 @@ Result
             return batches
 
 **3.2 运行结果**
-.. image:: kkk.png
+
+
 
 Discussion
 -----------------------------------
@@ -110,3 +120,5 @@ https://blog.csdn.net/weixin_42072280/article/details/105989561
 http://c.biancheng.net/view/5736.html
 
 https://blog.csdn.net/weixin_34362875/article/details/89770393
+
+
