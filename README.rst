@@ -1,31 +1,33 @@
-Lab3:
-=======================================
- Introduction
---------------------------------------
-- 了解存储库的模式。 
+Lab3:  
+=======================================  
+Introduction  
+--------------------------------------  
+- 了解存储库的模式。  
 
-- 了解服务层模式。 
+- 了解服务层模式。  
 
 - 理解为什么将业务逻辑与数据存储技术分离起来很重要  
 
 Material and Methods  
------------------------------------
-2.1 工具
+-----------------------------------  
+2.1 工具  
 
-2.2 方法
+2.2 方法 
 
-Result
------------------------------------------
-3.1 repository.py
-代码
+Result  
+-----------------------------------------  
+3.1 repository.py  
 
-.. code::
-import abc
-import model
-import os,pickle
+代码  
+
+.. code::  
+
+ import abc
+ import model
+ import os,pickle
 
 
-class AbstractRepository(abc.ABC):
+ class AbstractRepository(abc.ABC):
     @abc.abstractmethod
     def add(self, batch: model.Batch):
         raise NotImplementedError
@@ -35,7 +37,7 @@ class AbstractRepository(abc.ABC):
         raise NotImplementedError
 
 
-class SqlAlchemyRepository(AbstractRepository):
+ class SqlAlchemyRepository(AbstractRepository):
     def __init__(self, session):
         self.session = session
 
@@ -48,7 +50,7 @@ class SqlAlchemyRepository(AbstractRepository):
     def list(self):
         return self.session.query(model.Batch).all()
 
-class PickleRepository(AbstractRepository):
+ class PickleRepository(AbstractRepository):
     ''' Complete the definition of this class. '''
     def __init__(self, path = None):
         self.path = path
@@ -80,14 +82,10 @@ class PickleRepository(AbstractRepository):
             return batches
 
 
+
 Discussion
 -----------------------------------
 
+
 Reference
 -------------------------------------
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
