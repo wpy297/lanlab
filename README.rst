@@ -10,15 +10,15 @@ Introduction
 
 Material and Methods  
 -----------------------------------  
-2.1 工具  
+**2.1 工具**  
 
-2.2 方法 
+**2.2 方法**
 
 Result  
 -----------------------------------------  
-3.1 repository.py  
+**3.1 repository.py**  
 
-代码  
+**代码**  
 
 .. code::  
 
@@ -81,11 +81,32 @@ Result
             f.close()
             return batches
 
-
+**3.2 运行结果**
+.. image:: kkk.png
 
 Discussion
 -----------------------------------
+- 教科书test services.py和我的test services.py有什么区别？
 
+ 区别：读取数据的来源不同
+
+- 在我们选择为存储库模式使用另一个实现后，服务层是否受到了影响？我们可以说服务层不知道持久性吗？
+
+ 选择为存储库模式使用另一个实现后，服务层不会收到影响
+  
+- 将业务逻辑与基础设施问题分离有什么好处？
+
+ 好处：降低了业务逻辑对基础设施的依赖，便于对基础设施的管理
+ 
+- 在哪里定义了业务逻辑，以及在哪里定义了基础结构？告诉我Python文件名.
+
+ 在model.py定义了业务逻辑， repository.py中定义了基础结构
 
 Reference
 -------------------------------------
+
+https://blog.csdn.net/weixin_42072280/article/details/105989561
+
+http://c.biancheng.net/view/5736.html
+
+https://blog.csdn.net/weixin_34362875/article/details/89770393
