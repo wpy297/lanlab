@@ -27,9 +27,9 @@ Material and Methods
 
 **2.2 方法**
 
-存储库模式：
+存储库模式 ：
 
-https://www.cosmicpython.com/book/chapter_02_repository.html
+https://www.cosmicpython.com/book/chapter_02_repository.html 
 
 Result  
 -----------------------------------------  
