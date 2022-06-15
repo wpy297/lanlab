@@ -54,7 +54,7 @@ Result
         raise NotImplementedError
 
 
- class SqlAlchemyRepository(AbstractRepository):
+ class SqlAlchemyRepository(AbstractRepository):  
     def __init__(self, session):
         self.session = session
 
